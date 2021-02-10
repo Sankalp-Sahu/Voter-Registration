@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</title>
+
+<head>
+</head>
+<style>
+    nav {
+        -webkit-transition: background-color 10s ease-out;
+        -moz-transition: background-color 10s ease-out;
+        -o-transition: background-color 10s ease-out;
+        transition: background-color 10s ease-out;
+    }
+
+    nav:hover {
+        background-color: white;
+        cursor: pointer;
+    }
+
+    nav {
+        width: 100%;
+        height: 90px;
+        background-color: goldenrod;
+        line-height: 80px;
+
+    }
+
+    nav ul {
+
+        float: left;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+
+    nav ul li {
+
+        list-style-type: none;
+        display: inline-block;
+        transition-delay: background-color 0.2s;
+        /* line-height: 80px; */
+
+        /* width: 100px; */
+    }
+
+    nav ul li :hover {
+
+        border-radius: 12px;
+        color: red;
+        background-color: goldenrod;
+
+    }
+
+    nav ul li a {
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        padding: 20px;
+        padding-left: 10px;
+
+    }
+
+
+    .logocircle {
+
+        float: left;
+        padding-top: 30px;
+        padding-right: 1%;
+        height: 5vh;
+        width: 12vh;
+    }
+
+    .logocircle1 {
+
+        float: center;
+        padding-right: 1%;
+        height: 5vh;
+        width: 12vh;
+    }
+
+    /* Image sl.ider style startys herer */
+
+    .slider {
+        width: 90%;
+        height: 600px;
+        margin: 50px auto;
+        position: relative;
+        box-shadow: 0px, 0px 10px 3px grey;
+        overflow: hidden;
+        border: 5px solid black;
+
+    }
+
+    .slider figure {
+        margin: 0px;
+        width: 500%;
+        height: 600px;
+        position: relative;
+
+        transition: 10s ease-in-out;
+        -webkit-transition: left 1s ease-in-out;
+        -moz-transtition: left 1s ease-in-out;
+        -o-transition: left 1s ease-in-out;
+
+    }
+
+    .slider figure img {
+        width: 20%;
+        height: 100%;
+        float: left;
+    }
+
+
+
+    .btn-next,
+    .btn-prev {
+        position: absolute;
+        top: 45%;
+        border-color: transparent;
+        cursor: pointer;
+        color: white;
+        background-color: transparent;
+        padding: 20px;
+        font-size: 50px;
+        border: none;
+
+    }
+
+    .btn-next:hover {
+        border-color: black;
+        color: chartreuse;
+    }
+
+    .btn-prev:hover {
+        color: chartreuse;
+    }
+
+    .btn-next {
+        right: 0px;
+
+    }
+
+    .btn-prev {
+        left: 0px;
+    }
+
+
+    /* .Adjust {
+        height: 445px;
+        width: 1141px;
+    } */
+
+
+    .div {
+        float: inline;
+    }
+
+    .footer {
+        background-color: goldenrod;
+        width: 100%;
+        height: 12%;
+        text-align: center;
+
+        padding: 2px;
+    }
+
+    border {
+        background-color: black;
+        border-bottom-width: 1vmin;
+    }
+
+    h2 {
+        border-bottom: 3px solid white;
+        color: white;
+        font-style: oblique;
+    }
+
+    body {
+        background-color: black;
+    }
+</style>
+
+
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <button class=" btn-prev"><i class="fa fa-arrow-circle-left"></i></button>
+    <button class="btn-next"><i class="fa fa-arrow-circle-right"></i></button>
+
+    </div>
+
+
+
+    <nav id=" nav">
+        <a href="C:\Users\HALCHAL\Desktop\Project 1\365Entertainment.html"><img
+                src="C:\Users\HALCHAL\Desktop\Project 1\365ep.jpg " class="logocircle"></a>
+
+
+        <ul>
+
+            <li> <a href="C:\Users\HALCHAL\Desktop\Project 1\Home.html">Movies</a>
+            </li>
+            <li><a href="#">Tv series</a></li>
+            <li><a href="#">Audio</a></li>
+
+        </ul>
+
+    </nav>
+
+
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            x = 0;
+            $('.btn-next').click(function () {
+                x = (x <= 300) ? (x + 100) : 0;
+                $('figure').css('left', -x + "%");
+
+            });
+
+            $('.btn-prev').click(function () {
+                x = (x >= 100) ? (x - 100) : 400;
+                $('figure').css('left', -x + "%");
+
+            });
+
+
+
+
+        });
+
+
+    </script>
+
+    <div class=" slider">
+        <figure>
+            <img src="file:///C:/Users/HALCHAL/Desktop/Project%201/Lagan.jpg" class="Adjust">
+            <img src="file:///C:/Users/HALCHAL/Desktop/Project%201/Special26.jpg" class="Adjust">
+            <img src="file:///C:/Users/HALCHAL/Desktop/Project%201/1920.jpg" class="Adjust">
+            <img src="file:///C:/Users/HALCHAL/Desktop/Project%201/jawani.jpg" class="Adjust">
+            <img src="file:///C:/Users/HALCHAL/Desktop/Project%201/randeep.jpg" class="Adjust">
+
+
+        </figure>
+    </div>
+
+    <!-- We have stasrted to add movie weith the namner grg -->
+    <h2>Popular in Actions
+    </h2>
+
+    <div>
+        <img src="C:\Users\HALCHAL\Desktop\Project 1\mainpic1.png">
+        <img src="C:\Users\HALCHAL\Desktop\Project 1\mainpic2.png">
+        <img src="C:\Users\HALCHAL\Desktop\Project 1\mainpic3.png">
+        <img src="C:\Users\HALCHAL\Desktop\Project 1\mainpic4.png">
+        <img src="C:\Users\HALCHAL\Desktop\Project 1\mainpic5.png">
+        <img src="C:\Users\HALCHAL\Desktop\Project 1\mainpic6.png">
+    </div><br>
+
+    <h2>Popular in Drama</h2>
+    <!-- <div class="border"> r</div> -->
+    <div>
+        <img src="C:\Users\HALCHAL\Desktop\Project 1\mainpic7.png">
+        <img src="C:\Users\HALCHAL\Desktop\Project 1\mainpic8.png">
+        <img src="C:\Users\HALCHAL\Desktop\Project 1\mainpic9.png">
+        <img src="C:\Users\HALCHAL\Desktop\Project 1\mainpic10.png">
+        <img src="C:\Users\HALCHAL\Desktop\Project 1\mainpic11.png">
+        <img src="C:\Users\HALCHAL\Desktop\Project 1\mainpic12.png">
+    </div><br>
+    <h2>Popular in Sci-Fi</h2>
+    <div>
+        <img src="C:\Users\HALCHAL\Desktop\Project 1\mainpic13.png">
+        <img src="C:\Users\HALCHAL\Desktop\Project 1\mainpic14.png">
+        <img src="C:\Users\HALCHAL\Desktop\Project 1\mainpic15.png">
+        <img src="C:\Users\HALCHAL\Desktop\Project 1\mainpic16.png">
+        <img src="C:\Users\HALCHAL\Desktop\Project 1\mainpic17.png">
+        <img src="C:\Users\HALCHAL\Desktop\Project 1\mainpic18.png">
+    </div><br>
+
+
+
+</body>
+
+<footer class="footer">
+
+    <h4><a href="C:\Users\HALCHAL\Desktop\Project 1\365Entertainment.html"><img
+                src="C:\Users\HALCHAL\Desktop\Project 1\365ep1.jpg " class="logocircle1"></a>
+        Powered by 365 Entertainment Portal 2019. All Rights Reserved.
+
+</footer>
+
+
+
+</html>

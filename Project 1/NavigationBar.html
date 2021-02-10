@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<title>
+    <title>
+
+        NAVIGSATION BAR
+    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</title>
+
+
+
+<head>
+</head>
+<style>
+    nav {
+        width: 100%;
+        height: 90px;
+        background-color: goldenrod;
+        line-height: 80px;
+    }
+
+    nav ul {
+        float: left;
+        margin-right: 20px;
+    }
+
+
+    nav ul li {
+
+        list-style-type: none;
+        display: inline-block;
+        transition-delay: background-color 0.2s;
+        /* line-height: 80px; */
+
+        /* width: 100px; */
+    }
+
+    nav ul li :hover {
+        background-color: pink;
+    }
+
+    nav ul li a {
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        padding: 40px;
+
+    }
+
+
+    .logocircle {
+
+        float: left;
+        padding-right: 1%;
+        height: 5vh;
+        width: 12vh;
+    }
+
+    /* Image sl.ider style startys herer */
+
+    .slider {
+        width: 90%;
+        height: 600px;
+        margin: 50px auto;
+        position: relative;
+        box-shadow: 0px, 0px 10px 3px grey;
+        overflow: hidden;
+        border: 5px solid black;
+
+    }
+
+    /* .slider figure {
+        margin: 0px;
+        width: 500%;
+        height: 600px;
+        position: relative;
+
+        transition: 1s ease-in-out;
+        -webkit-transition: left 2s;
+        -moz-transtition: left 2s;
+        -o-transition: left 2s;
+
+    }
+
+    .slider figure img {
+        width: 20%;
+        height: 100%;
+        float: left;
+    }
+
+    .btn-next,
+    .btn-prev {
+        position: absolute;
+        top: 45%;
+
+        cursor: pointer;
+        color: white;
+        background-color: yellow;
+        padding: 20px;
+        font-size: 50px;
+        border: none;
+    }
+
+    .btn-next {
+        right: 0px;
+
+    }
+
+    .btn-prev {
+        left: 0px;
+    } */
+
+
+    /* .Adjust {
+        height: 445px;
+        width: 1141px;
+    } */
+</style>
+
+
+
+<body>
+
+
+    <nav id=" nav">
+        <a href="C:\Users\HALCHAL\Desktop\Project 1\NavigationBar.html"><img
+                src="C:\Users\HALCHAL\Desktop\Project 1\365ep.jpg " class="logocircle"></a>
+        <ul>
+
+            <li> <a href="#">Movies</a>
+            </li>
+            <li><a href="#">Tv series</a></li>
+            <li><a href="#">Audio</a></li>
+
+        </ul>
+
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqeury/3.3.1/jqeury.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css>
+
+
+        <div class=" slider">
+    <figure>
+        <img src="file:///C:/Users/HALCHAL/Desktop/Project%201/Lagan.jpg">
+        <img src="file:///C:/Users/HALCHAL/Desktop/Project%201/Special26.jpg" class="Adjust">
+        <img src="file:///C:/Users/HALCHAL/Desktop/Project%201/1920.jpg" class="Adjust">
+        <img src="file:///C:/Users/HALCHAL/Desktop/Project%201/jawani.jpg" class="Adjust">
+        <img src="file:///C:/Users/HALCHAL/Desktop/Project%201/randeep.jpg" class="Adjust">
+
+
+    </figure>
+    <!-- <button class="btn-prev"><i class="fa fa-arrow-circle-left"></i></button>
+        <button class="btn-next"><i class="fa fa-arrow-circle-right"></i></button>
+
+        </div>
+        <script>
+            $(document).ready(function () {
+                x = 0;
+                $('.btn-next').click(function () {
+                    x = (x <= 300) ? (x + 100) : 0 ?
+                        $('.figure').css('left', -x + "%")            
+            
+            });
+
+            });
+
+
+        </script> -->
+</body>
+
+</html>

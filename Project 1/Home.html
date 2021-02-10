@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+
+</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</title>
+
+<head>
+</head>
+<style>
+    nav {
+        -webkit-transition: background-color 10s ease-out;
+        -moz-transition: background-color 10s ease-out;
+        -o-transition: background-color 10s ease-out;
+        transition: background-color 10s ease-out;
+    }
+
+    nav:hover {
+        background-color: white;
+        cursor: pointer;
+    }
+
+    nav {
+        width: 100%;
+        height: 90px;
+        background-color: goldenrod;
+        line-height: 80px;
+
+    }
+
+    nav ul {
+
+        float: left;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+
+    nav ul li {
+
+        list-style-type: none;
+        display: inline-block;
+        transition-delay: background-color 0.2s;
+        /* line-height: 80px; */
+
+        /* width: 100px; */
+    }
+
+    nav ul li :hover {
+        color: red;
+        border-radius: 12px;
+        background-color: goldenrod;
+    }
+
+    nav ul li a {
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        padding: 20px;
+        padding-left: 10px;
+
+    }
+
+
+    .logocircle {
+
+        float: left;
+        padding-top: 30px;
+        padding-right: 1%;
+        height: 10vh;
+        width: 12vh;
+    }
+
+    .logocircle1 {
+
+        float: center;
+        padding-right: 1%;
+        height: 5vh;
+        width: 12vh;
+    }
+
+    /* Image sl.ider style startys herer */
+
+    .slider1 {
+        width: 90%;
+        height: 600px;
+        margin: 50px auto;
+        position: relative;
+        box-shadow: 0px, 0px 10px 3px grey;
+        overflow: hidden;
+        border: 5px solid black;
+
+    }
+
+    .slider1 figure {
+        margin: 0px;
+        width: 500%;
+        height: 600px;
+        position: relative;
+
+        transition: 10s ease-in-out;
+        -webkit-transition: left 1s ease-in-out;
+        -moz-transtition: left 1s ease-in-out;
+        -o-transition: left 1s ease-in-out;
+
+    }
+
+    .slider1 figure img {
+        width: 20%;
+        height: 100%;
+        float: left;
+    }
+
+    .btn-next,
+    .btn-prev {
+        position: absolute;
+        top: 45%;
+
+        cursor: pointer;
+        color: white;
+        background-color: transparent;
+        padding: 20px;
+        font-size: 50px;
+        border: none;
+
+    }
+
+    .btn-next:hover {
+        border-color: black;
+        color: chartreuse;
+    }
+
+    .btn-prev:hover {
+        color: chartreuse;
+    }
+
+    .btn-next {
+        right: 0px;
+
+    }
+
+    .btn-prev {
+        left: 0px;
+    }
+
+
+
+    /* .Adjust {
+        height: 445px;
+        width: 1141px;
+    } */
+
+
+    .div {
+        float: inline;
+    }
+
+    .footer {
+        background-color: goldenrod;
+        width: 100%;
+        height: 12%;
+        text-align: center;
+
+        padding: 2px;
+    }
+
+    border {
+        background-color: black;
+        border-bottom-width: 1vmin;
+    }
+
+    .h2 {
+        border-bottom: 3px solid white;
+
+    }
+
+    body {
+        background-color: black;
+    }
+
+    .form-search {
+        width: 640px;
+        margin: 240px;
+    }
+
+    .search-items {
+        text-align: center;
+        width: 90%;
+        height: 35px;
+
+    }
+
+    .containerItems {
+
+        width: 660px;
+        margin: 240 px;
+        clear: both;
+
+    }
+
+    .item {
+        float: left;
+        width: 260px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .item img {
+        width: 100px;
+
+    }
+
+    * {
+
+        box-sizing: border-box;
+    }
+
+    #myInput {
+        text-align: center;
+        background-color: goldenrod;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        width: 80%;
+        font-size: 16px;
+        float: right;
+        padding: 12px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+    }
+
+    #myTable {
+
+        /* border-collapse: collapse; */
+        /* width: 100%; */
+        /* border: 1px solid #ddd; */
+        font-size: 0px;
+    }
+
+    #myTable th,
+    #myTable td {
+        /* display: block; */
+        text-align: inline;
+        /* padding: 12px; */
+
+    }
+
+    /* #myTable tr {
+            border-bottom: 1px solid #ddd;
+        } */
+
+    #myTable tr.header,
+    #myTable tr:hover {
+        background-color: #f1f1f1;
+
+
+
+    }
+
+    table tr>* {
+        display: table-row;
+        /* width: 12px; */
+    }
+
+    table tr {
+        display: inline-table;
+
+    }
+
+
+    .SEARCH {
+        height: 45px;
+        float: right;
+        width: 6%;
+        /* padding-left: 67%; */
+        /* padding-right: 12%; */
+        background-color: goldenrod;
+    }
+
+
+    .filterDiv {
+        float: left;
+        background-color: black;
+        color: #ffffff;
+        width: 146px;
+        height: 144px;
+        line-height: 100px;
+        text-align: center;
+        margin: 2px;
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .container {
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    /* Style the buttons */
+    .btn {
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        background-color: goldenrod;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: goldenrod;
+    }
+
+    .btn.active {
+        background-color: goldenrod;
+        color: white;
+    }
+
+    .dropdown {
+        background-color: black;
+    }
+</style>
+
+
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <button class=" btn-prev"><i class="fa fa-arrow-circle-left"></i></button>
+    <button class="btn-next"><i class="fa fa-arrow-circle-right"></i></button>
+
+    </div>
+
+
+
+    <nav id=" nav">
+        <a href="C:\Users\HALCHAL\Desktop\Project 1\365Entertainment.html">
+            <img src="365ep.jpg " class="logocircle"></a>
+        <ul>
+
+            <li> <a href="C:\Users\HALCHAL\Desktop\Project 1\Home.html">Movies</a>
+            </li>
+            <li><a href="#">Tv series</a></li>
+            <li><a href="#">Audio</a></li>
+
+        </ul>
+
+    </nav>
+
+
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            x = 0;
+            $('.btn-next').click(function () {
+                x = (x <= 300) ? (x + 100) : 0;
+                $('figure').css('left', -x + "%");
+
+            });
+
+            $('.btn-prev').click(function () {
+                x = (x >= 100) ? (x - 100) : 400;
+                $('figure').css('left', -x + "%");
+
+            });
+
+
+
+
+        });
+
+
+    </script>
+
+    <div class=" slider1">
+        <figure>
+            <img src="img1.jpg" class="Adjust">
+            <img src="img2.jpg" class="Adjust">
+            <img src="img3.jpg" class="Adjust">
+            <img src="img4.jpg" class="Adjust">
+            <img src="img5.jpg" class="Adjust">
+
+
+        </figure>
+    </div>
+
+
+
+    <script src="jquery.min.js"></script>
+
+    <script src="e-search.min.js"></script>
+    <script>
+        $('.search-items').search({
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    <script src="filte.js"></script>
+    <button type="submit" class="SEARCH"><i class="fa fa-search"></i></button>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search your favourite movie title"
+        title="Type in a name">
+    <br><br><br><br><br>
+    <table id="myTable">
+
+        <tr class="header">
+            <!-- <th style="width:0%;">Name</th> -->
+            <th style="width:0%;">Country</th>
+        </tr>
+        <tr>
+
+            <td>Haider</td>
+
+            <td><img src="Haider.png">Germany</td>
+        </tr>
+
+        <tr>
+            <td>Dream2</td>
+
+            <td><img src="Dream2.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Batman</td>
+
+            <td><img src="Batman.png">Germany</td>
+        </tr>
+
+        <tr>
+            <td>Batman</td>
+
+            <td><img src="Batmans.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Monster Manav</td>
+
+            <td><img src="Monster Manav.png">Germany</td>
+        </tr>
+
+        <tr>
+            <td>Rowdy</td>
+
+            <td><img src="Rowdy.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Agnipaath</td>
+
+            <td><img src="Agnipaath.png">Germany</td>
+        </tr>
+
+        <tr>
+            <td>Guide</td>
+
+            <td><img src="Guide.png">Germany</td>
+
+        </tr>
+
+        <tr>
+            <td>Deewar</td>
+
+            <td><img src="Deewar.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Sholay</td>
+
+            <td><img src="Sholay.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Shaurya</td>
+
+            <td><img src="Shaurya.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Cheeni kum</td>
+
+            <td><img src="Cheeni kum.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Ishq Vishq </td>
+
+            <td><img src="Ishq Vishq.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Padmaavat</td>
+
+            <td><img src="Padmaavat.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Kai Po Che</td>
+
+            <td><img src="Kai Po Che.png">Germany</td>
+        </tr>
+        <tr>
+            <td></td>
+
+            <td><img src="">Germany</td>
+        </tr>
+        <tr>
+            <td>Raabta</td>
+
+            <td><img src="Raabta.png">Germany</td>
+        </tr>
+
+        <tr>
+            <td>Interstellar</td>
+
+            <td><img src="Interstellar.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Star Wars</td>
+
+            <td><img src="Star Wars.png">Germany</td>
+        </tr>
+
+        <tr>
+            <td>Thor.png</td>
+
+            <td><img src="Thor.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Captain America.png</td>
+
+            <td><img src="Captain America.png">Germany</td>
+        </tr>
+
+        <tr>
+            <td>X-men</td>
+
+            <td><img src="X-men.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Black Widow</td>
+
+            <td><img src="Black Widow.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Iron Man</td>
+
+            <td><img src="Iron Man">Germany</td>
+        </tr>
+        <tr>
+            <td>Hulk</td>
+
+            <td><img src="Hulk.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Captain Marvel</Caption>
+            </td>
+
+            <td><img src="Captain Marvel.png">Germany</td>
+        </tr>
+
+        <tr>
+            <td>Wonder Wommen</td>
+
+            <td><img src="Wonder Women.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Batwomen</td>
+
+            <td><img src="Batwomen.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Superman</td>
+
+            <td><img src="Superman.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Super Women</td>
+
+            <td><img src="SuperWoman.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Doctor Strange</td>
+
+            <td><img src="Doctor Strange.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Mars</td>
+
+            <td><img src="Mars.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Gravity</td>
+
+            <td><img src="Gravity.png">Germany</td>
+        </tr>
+
+        <tr>
+            <td>Martian</td>
+
+            <td><img src="Martian.png">Germany</td>
+        </tr>
+        <tr>
+            <td></td>
+
+            <td><img src="">Germany</td>
+        </tr>
+
+
+
+
+    </table>
+
+    <script src="QWENTRY.js"></script>
+
+
+    <!-- <h2>My Customers</h2> -->
+
+    <h2>Genre</h2>
+    <div class="dropdown">
+
+        <div id="myBtnContainer">
+
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('cars')"> Actions</button>
+            <button class="btn" onclick="filterSelection('animals')"> Drama</button>
+            <button class="btn" onclick="filterSelection('fruits')"> Sci-fi</button>
+            <!-- <button class="btn" onclick="filterSelection('colors')"> Colors</button> -->
+            <!-- </select> -->
+        </div>
+    </div>
+    <div class="container">
+        <div class="filterDiv cars"><img src="Haider.png"></div>
+
+        <div class="filterDiv cars"><img src="Dream2.png"></div>
+        <div class="filterDiv cars"><img src="Batman.png"></div>
+        <div class="filterDiv cars"><img src="Monster Manav.png"></div>
+        <div class="filterDiv cars"><img src="Kill Bill.png"></div>
+        <div class="filterDiv cars"><img src="Rowdy.png"></div>
+
+        <!-- <div class="filterDiv cars animals">Mustang</div> -->
+
+        <div class="filterDiv animals"><img src="Guide.png"></div>
+        <div class="filterDiv animals"><img src="Deewar.png"></div>
+        <div class="filterDiv animals"><img src="K3G.png"></div>
+        <div class="filterDiv animals"><img src="Padmaavat.png"></div>
+        <div class="filterDiv animals"><img src="Shaurya.png"></div>
+        <div class="filterDiv animals"><img src="Ishq Vishq.png"></div>
+        <div class="filterDiv animals"><img src="Cheeni Kum.png"></div>
+        <div class="filterDiv animals"><img src="Ishq Vishq.png"></div>
+        <div class="filterDiv animals"><img src="Kai po che.png"></div>
+        <div class="filterDiv animals"><img src="Raabta.png"></div>
+
+        <!-- <div class="filterDiv fruits animals">Kiwi</div> -->
+        <div class="filterDiv fruits"><img src="Interstellar.png"></div>
+        <div class="filterDiv fruits"><img src="Thor.png"></div>
+        <div class="filterDiv fruits"><img src="Captain America.png"></div>
+        <div class="filterDiv fruits"><img src="X-men.png"></div>
+        <div class="filterDiv fruits"><img src="Black Widow.png"></div>
+        <div class="filterDiv fruits"><img src="Iron-Man.png"></div>
+        <div class="filterDiv fruits"><img src="Hulk.png"></div>
+        <div class="filterDiv fruits"><img src="Captain Marvel.png"></div>
+        <div class="filterDiv fruits"><img src="Wonder Women.png"></div>
+        <div class="filterDiv fruits"><img src="Batwomen.png"></div>
+        <div class="filterDiv fruits"><img src="Batmans.png"></div>
+        <div class="filterDiv fruits"><img src="Superman.png"></div>
+        <div class="filterDiv fruits"><img src="Doctor Strange.png"></div>
+        <div class="filterDiv fruits"><img src="Mars.png"></div>
+        <div class="filterDiv fruits"><img src="Gravity.png"></div>
+        <div class="filterDiv fruits"><img src="Martian.png"></div>
+        <div class="filterDiv animals"><img src="Ankhein.png"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<br><br><br><br><br><br><br><br>
+<footer class="footer">
+
+    <h4><a href="C:\Users\HALCHAL\Desktop\Project 1\365Entertainment.html"><img src="365ep1.jpg "
+                class="logocircle1"></a>
+        Powered by 365 Entertainment Portal 2019. All Rights Reserved.
+
+</footer>
+
+
+
+</html>

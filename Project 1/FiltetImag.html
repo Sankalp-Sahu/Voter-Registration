@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+
+            box-sizing: border-box;
+        }
+
+        #myInput {
+            background-image: url('/css/searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+        }
+
+        #myTable {
+
+            /* border-collapse: collapse; */
+            /* width: 100%; */
+            /* border: 1px solid #ddd; */
+            font-size: 0px;
+        }
+
+        #myTable th,
+        #myTable td {
+            /* display: block; */
+            text-align: inline;
+            /* padding: 12px; */
+
+        }
+
+        /* #myTable tr {
+            border-bottom: 1px solid #ddd;
+        } */
+
+        #myTable tr.header,
+        #myTable tr:hover {
+            background-color: #f1f1f1;
+
+
+
+        }
+
+        table tr>* {
+            display: table-row;
+            /* width: 12px; */
+        }
+
+        table tr {
+            display: inline-table;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>My Customers</h2>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+    <table id="myTable">
+
+        <tr class="header">
+            <!-- <th style="width:0%;">Name</th> -->
+            <th style="width:0%;">Country</th>
+        </tr>
+        <tr>
+
+            <td>Haider</td>
+
+            <td><img src="Haider.png">Germany</td>
+        </tr>
+
+        <tr>
+            <td>Dream2</td>
+
+            <td><img src="Dream2.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Batman</td>
+
+            <td><img src="Batman.png">Germany</td>
+        </tr>
+
+        <tr>
+            <td>Batman</td>
+
+            <td><img src="Batmans.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Monster Manav</td>
+
+            <td><img src="Monster Manav.png">Germany</td>
+        </tr>
+
+        <tr>
+            <td>Rowdy</td>
+
+            <td><img src="Rowdy.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Agnipaath</td>
+
+            <td><img src="Agnipaath.png">Germany</td>
+        </tr>
+
+        <tr>
+            <td>Guide</td>
+
+            <td><img src="Guide.png">Germany</td>
+
+        </tr>
+
+        <tr>
+            <td>Deewar</td>
+
+            <td><img src="Deewar.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Sholay</td>
+
+            <td><img src="Sholay.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Shaurya</td>
+
+            <td><img src="Shaurya.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Cheeni kum</td>
+
+            <td><img src="Cheeni kum.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Ishq Vishq </td>
+
+            <td><img src="Ishq Vishq.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Padmaavat</td>
+
+            <td><img src="Padmaavat.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Kai Po Che</td>
+
+            <td><img src="Kai Po Che.png">Germany</td>
+        </tr>
+        <tr>
+            <td></td>
+
+            <td><img src="">Germany</td>
+        </tr>
+        <tr>
+            <td>Raabta</td>
+
+            <td><img src="Raabta.png">Germany</td>
+        </tr>
+
+        <tr>
+            <td>Interstellar</td>
+
+            <td><img src="Interstellar.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Star Wars</td>
+
+            <td><img src="Star Wars.png">Germany</td>
+        </tr>
+
+        <tr>
+            <td>Thor.png</td>
+
+            <td><img src="Thor.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Captain America.png</td>
+
+            <td><img src="Captain America.png">Germany</td>
+        </tr>
+
+        <tr>
+            <td>X-men</td>
+
+            <td><img src="X-men.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Black Widow</td>
+
+            <td><img src="Black Widow.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Iron Man</td>
+
+            <td><img src="Iron Man">Germany</td>
+        </tr>
+        <tr>
+            <td>Hulk</td>
+
+            <td><img src="Hulk.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Captain Marvel</Caption>
+            </td>
+
+            <td><img src="Captain Marvel.png">Germany</td>
+        </tr>
+
+        <tr>
+            <td>Wonder Wommen</td>
+
+            <td><img src="Wonder Women.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Batwomen</td>
+
+            <td><img src="Batwomen.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Superman</td>
+
+            <td><img src="Superman.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Super Women</td>
+
+            <td><img src="SuperWoman.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Doctor Strange</td>
+
+            <td><img src="Doctor Strange.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Mars</td>
+
+            <td><img src="Mars.png">Germany</td>
+        </tr>
+        <tr>
+            <td>Gravity</td>
+
+            <td><img src="Gravity.png">Germany</td>
+        </tr>
+
+        <tr>
+            <td>Martian</td>
+
+            <td><img src="Martian.png">Germany</td>
+        </tr>
+        <tr>
+            <td></td>
+
+            <td><img src="">Germany</td>
+        </tr>
+
+
+
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="filte.js">
+    </script>
+
+</body>
+
+</html>
